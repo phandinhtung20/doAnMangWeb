@@ -1,0 +1,15 @@
+{
+  "name": "webrtc",
+  "version": "1.0.0",
+  "description": "Test web rtc - for do an Mang - DUT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tung Phan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
