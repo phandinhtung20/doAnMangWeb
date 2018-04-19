@@ -12,6 +12,6 @@ app.get('/3', (req,res)=>{
   res.render('index3');
 })
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT||3000, ()=>{
   console.log("Started server");
 })

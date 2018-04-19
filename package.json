@@ -4,7 +4,7 @@
   "description": "Test web rtc - for do an Mang - DUT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index"
   },
   "author": "Tung Phan",
   "license": "ISC",
