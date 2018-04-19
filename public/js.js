@@ -1,6 +1,6 @@
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 // PeerJS object
-var peer = new Peer({host: 'peerjs-dut.herokuapp.com', port: 80});
+var peer = new Peer({host: 'peerjs-dut.herokuapp.com', port: 443});
 
 peer.on('open', function(){
   $('#my-id').text(peer.id);
