@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>PeerJS - Video chat example</title>
+  <link rel="stylesheet" href="css.css">
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="peer.js"></script>
+  <script src="js.js"></script>
+  <script type="text/javascript">
+
+  </script>
+</head>
+
+<body>
+  <div class="pure-g">
+      <!-- Video area -->
+      <div class="pure-u-2-3" id="video-container">
+        <video id="their-video" autoplay></video>
+      </div>
+      <div class="listPaticipant">
+        <video id="my-video1" class="videoItem" muted="true" autoplay src="https://www.w3schools.com/tags/movie.ogg"></video>
+        <video id="my-video2" class="videoItem" muted="true" autoplay></video>
+        <video id="my-video3" class="videoItem" muted="true" autoplay></video>
+        <video id="my-video" class="videoItem" muted="true" autoplay></video>
+      </div>
+      <div class="bottom">
+        <div class="bottomLeft">
+          <ul class="list-item">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+        </div>
+        <div class="bottomRight">
+          <div class="pure-u-1-3">
+            <h2>PeerJS Video Chat</h2>
+            <!-- Get local audio/video stream -->
+            <div id="step1">
+              <p>Please click `allow` on the top of the screen so we can access your webcam and microphone for calls.</p>
+              <div id="step1-error">
+                <p>Failed to access the webcam and microphone. Make sure to run this demo on an http server and click allow when asked for permission by the browser.</p>
+                <a href="#" class="pure-button pure-button-error" id="step1-retry">Try again</a>
+              </div>
+            </div>
+            <!-- Make calls to others -->
+            <div id="step2">
+              <p>Your id: <span id="my-id">...</span></p>
+              <p>Share this id with others so they can call you.</p>
+              <h3>Make a call</h3> <button type="button" class="btn btn-success" id="AddItem">Add</button>
+              <div class="pure-form">
+                <input type="text" placeholder="Call user id..." id="callToID">
+                <a href="#" class="pure-button pure-button-success" id="make-call">Call</a>
+              </div>
+            </div>
+            <!-- Call in progress -->
+            <div id="step3">
+              <p>Currently in call with <span id="their-id">...</span></p>
+              <p><a href="#" class="pure-button pure-button-error" id="end-call">End call</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Steps -->
+  </div>
+</body>
+</html>
