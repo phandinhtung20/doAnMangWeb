@@ -103,3 +103,10 @@
 #my-id {
   font-weight: bold;
 }
+
+.divVideoItem {
+  float: left;
+  padding-left: 5dp;
+  height: auto;
+  width: auto;
+}

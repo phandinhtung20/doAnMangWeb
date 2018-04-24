@@ -4,9 +4,9 @@
   <link rel="stylesheet" href="css.css">
   <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="peer.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="js.js"></script>
   <script type="text/javascript">
-
   </script>
 </head>
 
@@ -17,17 +17,17 @@
         <video id="their-video" autoplay></video>
       </div>
       <div class="listPaticipant">
-        <video id="my-video1" class="videoItem" muted="true" autoplay src="https://www.w3schools.com/tags/movie.ogg"></video>
-        <video id="my-video2" class="videoItem" muted="true" autoplay></video>
-        <video id="my-video3" class="videoItem" muted="true" autoplay></video>
         <video id="my-video" class="videoItem" muted="true" autoplay></video>
+        <!-- <div class="divVideoItem">
+          <br><hr>
+          <button type="button" name="button">Hang up</button>
+        </div> -->
       </div>
       <div class="bottom">
         <div class="bottomLeft">
-          <ul class="list-item">
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
+          <button id="refresh">Reload list</button>
+          <button id="addDiv">Add video</button>
+          <ul class="list-items">
           </ul>
         </div>
         <div class="bottomRight">
@@ -54,7 +54,9 @@
             <!-- Call in progress -->
             <div id="step3">
               <p>Currently in call with <span id="their-id">...</span></p>
-              <p><a href="#" class="pure-button pure-button-error" id="end-call">End call</a></p>
+              <p>
+                <button type="button" name="button" id="end-call">Hang up</button>
+              </p>
             </div>
           </div>
         </div>
