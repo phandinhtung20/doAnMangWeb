@@ -77,14 +77,32 @@
   padding: 10px;
 }
 
-.listPaticipant {
+.messageArea {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.listMessage {
+  background: #eee;
+  min-height: 50px;
+  max-height: 300px;
+  width: 100%
   height: auto;
-  width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  /*background-color: #0000ff;*/
-  overflow-x: auto;
+  overflow-y: auto;
   white-space: nowrap;
+}
+
+#message {
+  width: 80%;
+}
+
+#btnSend {
+  width: 15%;
+}
+
+.textRight {
+  float:right;
 }
 
 .paticipantItem {

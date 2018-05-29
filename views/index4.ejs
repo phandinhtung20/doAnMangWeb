@@ -15,13 +15,15 @@
       <!-- Video area -->
       <div class="pure-u-2-3" id="video-container">
         <video id="their-video" autoplay></video>
-      </div>
-      <div class="listPaticipant">
         <video id="my-video" class="videoItem" muted="true" autoplay></video>
-        <!-- <div class="divVideoItem">
-          <br><hr>
-          <button type="button" name="button">Hang up</button>
-        </div> -->
+      </div>
+      <div class="messageArea">
+        <div class="listMessage">
+          <span><b>Start chat room</b></span>
+        </div>
+        <div class="">
+          <input type="text" id="message"> <button type="button" id="btnSend">Send</button>
+        </div>
       </div>
       <div class="bottom">
         <div class="bottomLeft">
@@ -45,10 +47,10 @@
             <div id="step2">
               <p>Your id: <span id="my-id">...</span></p>
               <p>Share this id with others so they can call you.</p>
-              <h3>Make a call</h3> <button type="button" class="btn btn-success" id="AddItem">Add</button>
+              <h3>Make a call</h3>
               <div class="pure-form">
-                <input type="text" placeholder="Call user id..." id="callToID">
-                <a href="#" class="pure-button pure-button-success" id="make-call">Call</a>
+                <input type="text" placeholder="Enter your name" id="myName">
+                <button href="#" class="pure-button pure-button-success" id="make-call">Start chat</button>
               </div>
             </div>
             <!-- Call in progress -->
