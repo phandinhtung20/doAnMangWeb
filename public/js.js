@@ -2,7 +2,7 @@ navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia 
 // PeerJS object
 var peer = new Peer({
       host: 'peerjs-dut.herokuapp.com',
-      port: 80
+      port: 443
     }),
     mySocket='',
     myPeer='',
